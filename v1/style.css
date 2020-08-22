@@ -32,9 +32,14 @@ body{
     justify-self: center;
 }
 
+.hidden {
+    display: none;
+}
+
 #text-top {
     font: 700 2.4rem Archivo;
 }
+
 
 .botoes #on,
 .botoes #agendar  {
@@ -44,49 +49,108 @@ body{
     background: var(--color-secondary);
     border-radius: 10px;
     font: 700 1.4rem Archivo;
+    width: 250px;
+    height: 50px;
 
+}
+
+.botoes #on {
+    margin-right: 20px;
 }
 
 .botoes #agendar {
     background: var(--color-agendamento);
 }
 
-#add-date {
+#add-time {
     display: flex;
+    align-items: center;
+    justify-content: center ;
     color: var(--color-text-complement);
     font: 700 1.4rem Archivo;
     padding: 3px;
     background: green;
     border-radius: 12%;
     margin-top: 20px;
-    margin-bottom: 2.4px;
-    
+    margin-bottom: 7px;
+    width: 75px;
 }
 
-#all-inputs{
+.all-inputs{
     border: none;
     margin-top: .8px;
     color: var(--color-text-base);
     background: var(--color-text-in-primary);
     font: 700 1.4rem Archivo;
+    width: 400px;
+    padding: auto;
 }
 
-#input-block {
-    display: flex;
+
+
+.led {
+    display: flex; 
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .hora {
    display: flex; 
    align-items: center;
    justify-content: space-between;
+   margin-bottom: 20px;
 }
+
+.data {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+
 
 #input-led {
     width: 40px;
 }
 
+#input-hora {
+    width: 120px;
+}
+
 #input-data {
-    width: 140px;
+    width: 120px;
+
+}
+
+.all-inputs {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+.all-inputs .led-on {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.all-inputs #on{
+    color: var(--color-text-complement);
+    font: 700 10px Archivo;
+    padding: 3px;
+    background: green;
+    width: 15px;
+    margin-right: -50px;
+}
+
+
+.all-inputs #off{
+    color: var(--color-text-complement);
+    font: 700 10px Archivo;
+    padding: 3px;
+    background: rgba(248, 1, 1, 0.87);
+    width: 15px;
 }

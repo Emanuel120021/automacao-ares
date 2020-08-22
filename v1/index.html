@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <script src="/addField.js" defer></script>
+    <script src="/showField.js" defer></script>
+
+    <title>On/Off Led</title>
+</head>
+<body>
+    <div id="header">
+        <p id="text-top">Acionamento de Led</p> 
+    </div>
+
+
+
+    <div class="botoes">
+        <button id="on" onclick="mostra('leds', 'agendamento')" >Ligar led</button>
+        <button id="agendar" onclick="mostra('agendamento', 'leds')">Agendar</button>
+    </div>
+
+
+    <div id = "agendamento" class="hidden">
+        <div class="agendamentos">
+            <button id="add-time"> + Dia </button>
+            
+            <form class="all-inputs" action="">
+    
+                <fieldset class="geral-agendamentos">
+                    <div class="led">
+                        <label for="led">Led </label>
+                        <input id="input-led" name="led" type="number">
+                    </div>
+                    
+                    <div class="hora">
+                        <label for="hora">Hora (On)</label>
+                        <input id="input-hora" name="hora" type="time">
+                    </div>
+                    
+                    <div class="hora">
+                        <label for="Hora">Hora (Off)</label>
+                        <input id="input-hora" name="hora" type="time">
+                    </div>
+                    
+                    <div class="data">
+                        <label for="dias">Dias</label>
+                        <input id="input-data" name="dias" type="date">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+    
+    <div id = "leds" class="hidden">
+        <div class="all-inputs">
+
+            <div class="led-on">
+                <label for="led">Led </label>
+                <input id="input-led-on" name="led" type="number">
+                <input id="on" value="On">
+                <input id="off" value="Off">
+
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+
+
+
+</html>

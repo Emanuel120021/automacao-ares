@@ -1,4 +1,4 @@
-document.querySelector("#add-date")
+document.querySelector("#add-time")
     // Quando clicar no botão
     .addEventListener('click', cloneField)
 
